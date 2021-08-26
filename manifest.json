@@ -2,13 +2,21 @@
   "name": "Pets",
   "description": "Build an Extension!",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 4,
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "extension_toolbar_icon16.png",
-      "32": "extension_toolbar_icon32.png"
+      "16": "PetLogo16.png",
+      "48": "PetLogo48_.png",
+      "128": "PetLogo128.png"
     }
   },
-  "permissions": ["activeTab"]
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["styles.css"],
+      "js": ["main.js"]
+    }
+  ]
 }

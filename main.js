@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //append a new image
         const petButton = document.querySelector("#pet-image");
         petButton.setAttribute("src", image);
-        petButton.setAttribute("width", "100px");
+        petButton.setAttribute("width", "250px");
         // test(image, name);
         document.querySelector("#character-name").innerHTML = name;
       });
